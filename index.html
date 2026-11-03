@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anika Tasnim | Portfolio</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Anika Tasnim, CSE student at IIUC working on management systems and explainable deep learning."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+
+    <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+    <div id="bar"></div>
+
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav>
+
+        <div class="nav-inner">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">AT</a>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#research">Research</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+
+                <a
+                    href="assets/cv.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    class="resume-btn"
+                >
+                    Resume
+                </a>
+
+            </div>
+
+            <!-- Dark / Light Mode -->
+            <button
+                id="theme"
+                class="theme-btn"
+                aria-label="Toggle light and dark"
+            >
+                Dark
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="mobile-menu"
+                onclick="toggleMenu()"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-links" id="mobileLinks">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+
+            <a
+                href="assets/cv.pdf"
+                target="_blank"
+                rel="noopener"
+            >
+                Resume
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero">
+
+        <!-- Decorative circles -->
+        <div class="orb o1"></div>
+        <div class="orb o2"></div>
+
+        <div class="hero-container">
+
+            <!-- Hero Text -->
+            <div class="hero-text">
+
+                <h1>
+                    Anika
+                    <span>Tasnim</span>
+                </h1>
+
+                <!-- Typing animation -->
+                <p class="role-line">
+                    <span id="type"></span>
+                    <i class="cursor"></i>
+                </p>
+
+                <p class="hero-description">
+                    I am a Computer Science and Engineering student with a strong interest
+    in software development, artificial intelligence, data analysis
+    and research. Through academic projects and hands-on development,
+    I have worked with different programming languages, algorithms,
+    databases and development tools.
+                </p>
+
+                <!-- Statistics -->
+                <div class="stats">
+
+                    <div>
+                        <strong>
+                            <span data-count="5">0</span>
+                        </strong>
+                        <span>Projects built</span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            <span data-count="3.60" data-dec="2">0</span>
+                        </strong>
+                        <span>CGPA</span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            <span data-count="93.17" data-dec="2">0</span>%
+                        </strong>
+                        <span>Thesis accuracy</span>
+                    </div>
+
+                </div>
+
+
+                
+            </div>
+
+
+            <!-- Hero Photo -->
+            <div class="photo-area">
+
+                <div class="photo-decoration"></div>
+
+                <div class="photo-frame">
+
+                    <div class="photo-frame-inner">
+
+                        <!-- Placeholder shown if image is unavailable -->
+                        <div class="photo-placeholder">
+                            <div class="mono">AT</div>
+                            <div>Add assets/photo.jpg</div>
+                        </div>
+
+                        <!-- Profile Photo -->
+                        <img
+                            src="assets/photo.jpeg"
+                            alt="Portrait of Anika Tasnim"
+                            onerror="this.remove()"
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- Decorative flowers -->
+                <div class="flower one">✿</div>
+                <div class="flower two">✾</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== SKILLS MARQUEE ==================== -->
+    <div class="marquee">
+        <div class="track" id="track"></div>
+    </div>
+
+
+    <!-- ==================== QUICK LINKS ==================== -->
+    <section class="quick-section reveal">
+
+        <div class="quick-grid">
+
+            <a href="#projects" class="quick-card">
+                <div class="quick-number">01</div>
+                <h3>Projects</h3>
+                <p>Management systems and my thesis.</p>
+            </a>
+
+            <a href="#research" class="quick-card">
+                <div class="quick-number">02</div>
+                <h3>Research</h3>
+                <p>Explainable AI for image classification.</p>
+            </a>
+
+            <a href="#skills" class="quick-card">
+                <div class="quick-number">03</div>
+                <h3>Skills</h3>
+                <p>Programming, deep learning and web skills.</p>
+            </a>
+
+            <a href="#experience" class="quick-card">
+                <div class="quick-number">04</div>
+                <h3>Experience</h3>
+                <p>Teaching assistant and B.Sc. in CSE.</p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                About Me
+            </div>
+
+            <h2 class="section-title">
+                A little about<br>
+                my journey.
+            </h2>
+
+
+            <div class="about-grid">
+
+                <!-- About Card 1 -->
+                <div class="card about-card">
+
+                    <h3 class="display text-3xl mb-5">
+                        Hello, I'm Anika.
+                    </h3>
+
+                    <p>
+                        I am a Computer Science and Engineering student at IIUC,
+                        graduating in 2026. I like building practical systems,
+                        such as hospital, bank and voting platforms.
+                    </p>
+
+                    <p>
+                        I enjoy learning by building practical solutions and exploring how
+                        technology can be used to solve real-world problems. My current
+                        academic work has also strengthened my interest in research and
+                        developing technology-driven solutions in the healthcare field.
+                    </p>
+
+                </div>
+
+
+                <!-- About Card 2 -->
+                <div class="card about-card">
+
+                    <h3 class="display text-3xl mb-5">
+                        What I enjoy
+                    </h3>
+
+                    <p>
+                        I enjoy learning new technologies, solving computational
+                        problems, designing useful systems and exploring
+                        research ideas.
+                    </p>
+
+                    <div class="chips">
+
+                        <span class="chip">Problem Solving</span>
+                        <span class="chip">Research</span>
+                        <span class="chip">Programming</span>
+                        <span class="chip">Teaching</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">Academic Background</div>
+            <h2 class="section-title">Education</h2>
+
+            <div class="timeline">
+
+                <div class="tl-item">
+                    <span class="tl-year">2026</span>
+                    <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+                    <p>International Islamic University Chittagong (IIUC)</p>
+                </div>
+
+                <div class="tl-item">
+                    <span class="tl-year">2020</span>
+                    <h3>HSC, GPA 5.00</h3>
+                    <p>Chittagong Govt. Women's College</p>
+                </div>
+
+                <div class="tl-item">
+                    <span class="tl-year">2018</span>
+                    <h3>SSC, GPA 5.00</h3>
+                    <p>CDA Public School and College</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Selected Work
+            </div>
+
+
+            <div class="section-head">
+
+                <h2 class="section-title">
+                    Projects
+                </h2>
+
+                <!-- Project Filters -->
+                <div class="tabs" id="tabs">
+
+                    <button class="tab on" data-f="all">
+                        All
+                    </button>
+
+                    <button class="tab" data-f="research">
+                        Research
+                    </button>
+
+                    <button class="tab" data-f="system">
+                        Systems
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <p class="hint">
+                Click a project to see its details and images.
+            </p>
+
+
+            <div class="projects-grid">
+
+                <!-- Thesis Project -->
+                <article
+                    class="card project-card"
+                    data-cat="research"
+                    data-code="#"
+                    data-images="assets/proposed method.png,assets/grad cam.png,assets/gradcam++.png,assets/shap main.png,assets/uncertain.png"
+                    tabindex="0"
+                    role="button"
+                >
+
+                    <div class="project-image">
+
+                        <span>93.17%</span>
+
+                        <img
+                            src="assets/proposed method.png"
+                            alt=""
+                            onerror="this.remove()"
+                        >
+
+                        <em class="view-tag">
+                            View details
+                        </em>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Thesis:Pneumonia Detection Using Validation-Guided Multi-Backbone Fusion Framework with Uncertainty Estimation and XAI
+                        </h3>
+
+                        <p>
+                            pneumonia image classification with neural networks,
+                            image processing and explainable AI. Models
+                            compared: DenseNet121, MobileNet, EfficientNetB0
+                            and ResNet50.
+                        </p>
+
+                        <div class="chips">
+
+                            <span class="chip">Neural networks</span>
+                            <span class="chip">Image processing</span>
+                            <span class="chip">XAI</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Planly -->
+                <article
+                    class="card project-card"
+                    data-cat="system"
+                    data-code="#"
+                    data-images="assets/planly-home.png,assets/planly-marketplace.png,assets/planly-bookings.png,assets/planly-admin.png,assets/planly-vendor.png"
+                    tabindex="0"
+                    role="button"
+                >
+
+                    <div class="project-image">
+
+                        <span>PL</span>
+
+                        <img
+                            src="assets/planly-home.png"
+                            alt="Planly home page"
+                            onerror="this.remove()"
+                        >
+
+                        <em class="view-tag">
+                            View details
+                        </em>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            An Adaptive Planning System for Time and Budget
+                        </h3>
+
+                        <p>
+                            Planly: a web platform that helps people plan time- and budget-constrained life events (parties, moves, road trips) by matching them with service packages and providers.
+                        </p>
+                         <div class="chips">
+
+                            <span class="chip">Java Script</span>
+                            <span class="chip">Mongodb</span>
+                            <span class="chip">Render</span>
+                            <span class="chip">Vercel</span>
+
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+
+                <!-- Hospital Management -->
+                <article
+                    class="card project-card"
+                    data-cat="system"
+                    data-code="#"
+                    data-images="assets/hospital.jpg"
+                    tabindex="0"
+                    role="button"
+                >
+
+                    <div class="project-image">
+
+                        <span>HM</span>
+
+                        <img
+                            src="assets/hospital.jpg"
+                            alt=""
+                            onerror="this.remove()"
+                        >
+
+                        <em class="view-tag">
+                            View details
+                        </em>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Hospital Management System
+                        </h3>
+
+                        <p>
+                            Manages patients, doctors, appointments and
+                            records in one place.
+                        </p>
+
+                        <div class="chips">
+
+                            <span class="chip">C++</span>
+                            <span class="chip">Database</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+    
+<!-- Day & Night City View -->
+<article
+    class="card project-card"
+    data-cat="system"
+    data-code="#"
+    data-images="assets/city-day.png,assets/city-night.png,assets/city-view.png"
+    tabindex="0"
+    role="button"
+>
+
+    <div class="project-image">
+
+        <span>CG</span>
+
+        <img
+            src="assets/city-day.png"
+            alt="Day and Night City View"
+            onerror="this.remove()"
+        >
+
+        <em class="view-tag">
+            View details
+        </em>
+
+    </div>
+
+    <div class="project-content">
+
+        <h3>
+            Day & Night City View
+        </h3>
+
+        <p>
+            A computer graphics project that creates a city environment
+            with day and night views using OpenGL and FreeGLUT.
+        </p>
+         <div class="chips">
+
+                            <span class="chip">C++</span>
+                            <span class="chip">OpenGL</span>
+
+                        </div>
+
+
+    </div>
+
+</article>
+                <!-- AI Maze Game -->
+<article
+    class="card project-card"
+    data-cat="system"
+    data-code="An AI-based maze game developed using the A* pathfinding algorithm to find an efficient route from the starting point to the destination."
+    data-images="assets/maze-game.png,assets/maze-path.png"
+    tabindex="0"
+    role="button"
+>
+
+    <div class="project-image">
+
+        <span>AI</span>
+
+        <img
+            src="assets/maze-game.png"
+            alt="AI Maze Game"
+            onerror="this.remove()"
+        >
+
+        <em class="view-tag">
+            View details
+        </em>
+
+    </div>
+
+    <div class="project-content">
+
+        <h3>
+            AI Maze Game
+        </h3>
+
+        <p>
+            An AI-based maze game that uses the A* algorithm
+            to find an efficient path through the maze.
+        </p>
+         <div class="chips">
+
+                            <span class="chip">C++</span>
+                            <span class="chip">A++ Algorithm</span>
+
+                        </div>
+
+
+    </div>
+
+</article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Technical Abilities
+            </div>
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
+
+            <div class="skills-grid">
+
+                <!-- Python -->
+                <div class="card skill-card">
+
+                    <div class="skill-top">
+                        <span>Python</span>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div
+                            class="skill-fill"
+                            style="width:85%"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Deep Learning -->
+                <div class="card skill-card">
+
+                    <div class="skill-top">
+                        <span>Deep learning (CNNs)</span>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div
+                            class="skill-fill"
+                            style="width:80%"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Image Processing -->
+                <div class="card skill-card">
+
+                    <div class="skill-top">
+                        <span>Image processing</span>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div
+                            class="skill-fill"
+                            style="width:75%"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- HTML & CSS -->
+                <div class="card skill-card">
+
+                    <div class="skill-top">
+                        <span>HTML &amp; CSS</span>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div
+                            class="skill-fill"
+                            style="width:80%"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- JavaScript -->
+                <div class="card skill-card">
+
+                    <div class="skill-top">
+                        <span>JavaScript</span>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div
+                            class="skill-fill"
+                            style="width:70%"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- SQL -->
+                <div class="card skill-card">
+
+                    <div class="skill-top">
+                        <span>SQL &amp; databases</span>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div
+                            class="skill-fill"
+                            style="width:75%"
+                        ></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Additional Skills -->
+            <div class="chips">
+
+                <span class="chip">TensorFlow / Keras</span>
+                <span class="chip">Explainable AI</span>
+                <span class="chip">Git &amp; GitHub</span>
+                <span class="chip">Google Colab</span>
+                <span class="chip">C / C++</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== RESEARCH SECTION ==================== -->
+    <section id="research" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Academic Research
+            </div>
+
+            <h2 class="section-title">
+                Research &amp; Thesis
+            </h2>
+
+
+            <div class="research-grid">
+
+                <!-- Main Research -->
+                <div class="card research-main">
+
+                    <h3>
+                        Explainable AI for image classification
+                    </h3>
+
+                    <p>
+                        My thesis uses neural networks and image processing,
+                        with explainable AI (XAI) to show why the models make
+                        their predictions.
+                    </p>
+
+                    <p>
+                        I compared four models, DenseNet121, MobileNet,
+                        EfficientNetB0 and ResNet50, and reached an accuracy
+                        of 93.17%.
+                    </p>
+
+
+                    <div class="chips">
+
+                        <span class="chip">DenseNet121</span>
+                        <span class="chip">MobileNet</span>
+                        <span class="chip">EfficientNetB0</span>
+                        <span class="chip">ResNet50</span>
+                        <span class="chip">XAI</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Research Interests -->
+                <div class="card research-side">
+
+                    <h3>
+                        Research Interests
+                    </h3>
+
+                    <ul class="research-list">
+
+                        <li>Neural networks</li>
+                        <li>Image processing</li>
+                        <li>Explainable AI (XAI)</li>
+                        <li>Model comparison and evaluation</li>
+                        <li>Software engineering</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="timeline">
+
+                <div class="tl-item">
+                    <span class="tl-year">5th semester</span>
+                    <h3>Teaching Assistant, EEE-2422</h3>
+                    <p>IIUC</p>
+                </div>
+
+                <div class="tl-item">
+                    <span class="tl-year">4th semester</span>
+                    <h3>Teaching Assistant, CSE-2422</h3>
+                    <p>IIUC</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== CERTIFICATES ==================== -->
+    <section id="certificates" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">Achievements</div>
+            <h2 class="section-title">Certificates</h2>
+
+            <p class="hint cert-hint">Click a certificate to view it full size.</p>
+
+            <div class="cert-grid">
+
+                <!-- Certificate 1: put the image at assets/certificates/cert-1.jpg -->
+                <figure class="cert" tabindex="0" role="button">
+                    <div class="cert-thumb">
+                        <div class="cert-empty">Certificate 1<small>assets/certificates/cert-1.jpg</small></div>
+                        <img src="assets/certificates/cert-1.jpg" alt="Deep Learning in Biomedical Image Analysis" onerror="this.remove()">
+                    </div>
+                    <figcaption>
+                        <strong>Deep Learning in Biomedical Image Analysis</strong>
+                        <span>IIUC Tech Fest 2025 · IEEE CS IIUC SBC · Nov 2025</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Certificate 2: put the image at assets/certificates/cert-2.jpg -->
+                <figure class="cert" tabindex="0" role="button">
+                    <div class="cert-thumb">
+                        <div class="cert-empty">Certificate 2<small>assets/certificates/cert-2.jpg</small></div>
+                        <img src="assets/certificates/cert-2.jpg" alt="Machine Learning &amp; Computer Networking" onerror="this.remove()">
+                    </div>
+                    <figcaption>
+                        <strong>Machine Learning &amp; Computer Networking</strong>
+                        <span>NVIT &amp; IEEE ComSoc IIUC SBC · Feb 2024</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Certificate 3: put the image at assets/certificates/cert-3.jpg -->
+                <figure class="cert" tabindex="0" role="button">
+                    <div class="cert-thumb">
+                        <div class="cert-empty">Certificate 3<small>assets/certificates/cert-3.jpg</small></div>
+                        <img src="assets/certificates/cert-3.jpg" alt="Science &amp; Industrial Technology Fair" onerror="this.remove()">
+                    </div>
+                    <figcaption>
+                        <strong>Science &amp; Industrial Technology Fair</strong>
+                        <span>BCSIR Laboratories, Chittagong · Jan 2017</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Certificate 4: put the image at assets/certificates/cert-4.jpg -->
+                <figure class="cert" tabindex="0" role="button">
+                    <div class="cert-thumb">
+                        <div class="cert-empty">Certificate 4<small>assets/certificates/cert-4.jpg</small></div>
+                        <img src="assets/certificates/cert-4.jpg" alt="CUET National Space Carnival" onerror="this.remove()">
+                    </div>
+                    <figcaption>
+                        <strong>CUET National Space Carnival</strong>
+                        <span>CasCade International · Jan 2017</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Certificate 5: put the image at assets/certificates/cert-5.jpg -->
+                <figure class="cert" tabindex="0" role="button">
+                    <div class="cert-thumb">
+                        <div class="cert-empty">Certificate 5<small>assets/certificates/cert-5.jpg</small></div>
+                        <img src="assets/certificates/cert-5.jpg" alt="Tarunno Utsab Inter-School Debate" onerror="this.remove()">
+                    </div>
+                    <figcaption>
+                        <strong>Tarunno Utsab Inter-School Debate</strong>
+                        <span>Prothom Alo &amp; Confidence Cement · 2016</span>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section reveal">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Get In Touch
+            </div>
+
+            <h2 class="section-title">
+                Contact
+            </h2>
+
+
+            <div class="contact-grid">
+
+    <!-- Professional Card (flips on hover) -->
+    <div class="flip-card" tabindex="0">
+        <div class="flip-inner">
+
+            <!-- FRONT -->
+            <div class="flip-face flip-front profile-card">
+                <div class="profile-accent"></div>
+
+                <div class="profile-top">
+                    <div class="profile-logo">AT</div>
+                    <div>
+                        <div class="profile-tag">COMPUTER SCIENCE</div>
+                        <div class="profile-title">Anika Tasnim</div>
+                        <div class="profile-role">CSE Student · Researcher</div>
+                    </div>
+                </div>
+
+                <div class="profile-divider"></div>
+
+                <div class="profile-bottom">
+                    <div><span>Focus</span><strong>Software &amp; Research</strong></div>
+                    <div><span>Field</span><strong>Deep Learning, XAI</strong></div>
+                    <div><span>University</span><strong>IIUC</strong></div>
+                    <div><span>Location</span><strong>Chattogram, Bangladesh</strong></div>
+                </div>
+
+                <div class="profile-contact">
+                    <a href="mailto:anikatasnim2002bd@gmail.com">anikatasnim2002bd@gmail.com</a>
+                    <a href="tel:+8801998357966">01998357966</a>
+                </div>
+            </div>
+
+            <!-- BACK -->
+            <div class="flip-face flip-back profile-card">
+                <div class="profile-accent"></div>
+
+                <div class="back-title">Let's connect</div>
+                <p class="back-text">Open to projects, research and collaboration.</p>
+
+                <div class="back-list">
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:anikatasnim2002bd@gmail.com">anikatasnim2002bd@gmail.com</a>
+                    </div>
+                    <div>
+                        <span>Phone</span>
+                        <a href="tel:+8801998357966">01998357966</a>
+                    </div>
+                    <div>
+                        <span>Location</span>
+                        <strong>Chattogram, Bangladesh</strong>
+                    </div>
+                </div>
+
+                <div class="back-social">
+
+    <a href="https://github.com/Anika-lib" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+
+    <a href="https://wa.me/qr/AFTAUP5V2GNOA1" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Contact Form -->
+    <div class="card contact-form">
+
+        <h3>Send a message</h3>
+
+        <form id="form" novalidate>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="f-name">Name</label>
+                    <input id="f-name" name="name" type="text" class="inp"
+                           placeholder="Your name" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="f-email">Email</label>
+                    <input id="f-email" name="email" type="email" class="inp"
+                           placeholder="Your email" required autocomplete="email">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="f-msg">Message</label>
+                <textarea id="f-msg" name="message" class="inp"
+                          placeholder="Your message" rows="3" required></textarea>
+            </div>
+
+            <!-- Hidden spam protection field -->
+            <input type="text" name="_gotcha" class="hide" tabindex="-1" autocomplete="off">
+
+            <button id="send" type="submit" class="btn btn-primary">Send Message</button>
+
+            <p id="status" class="form-status" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        © 2026 Anika Tasnim · Personal Portfolio
+    </footer>
+
+
+    <!-- ==================== PROJECT POPUP ==================== -->
+    <div
+        id="modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mtitle"
+    >
+
+        <div class="m-box">
+
+            <!-- Close Button -->
+            <button
+                id="mclose"
+                class="m-close"
+                aria-label="Close"
+            >
+                &times;
+            </button>
+
+
+            <!-- Main Project Image -->
+            <button
+                id="mimg"
+                class="m-img"
+                aria-label="View image full screen"
+            >
+
+                <span id="mfall"></span>
+
+                <img
+                    id="mmain"
+                    alt=""
+                >
+
+            </button>
+
+
+            <!-- Thumbnail Images -->
+            <div
+                id="mthumbs"
+                class="m-thumbs"
+            ></div>
+
+
+            <!-- Project Information -->
+            <div class="m-body">
+
+                <h3 id="mtitle"></h3>
+
+                <p id="mdesc"></p>
+
+                <div
+                    id="mchips"
+                    class="chips"
+                ></div>
+
+                <div
+                    id="mlinks"
+                    class="m-links"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Full Screen Image -->
+    <div
+        id="lightbox"
+        class="lightbox"
+    >
+
+        <img
+            id="lbimg"
+            alt=""
+        >
+
+    </div>
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+
+        /* -------------------------------------------------
+           SHORTCUT FOR GETTING AN ELEMENT BY ID
+        ------------------------------------------------- */
+
+        const $ = id => document.getElementById(id);
+
+
+        /* -------------------------------------------------
+           MOBILE MENU
+        ------------------------------------------------- */
+
+        function toggleMenu()
+        {
+            $('mobileLinks').classList.toggle('show');
+        }
+
+
+        // Close mobile menu after selecting a link
+        document
+            .querySelectorAll('.mobile-links a')
+            .forEach(link =>
+                link.addEventListener('click', () =>
+                    $('mobileLinks').classList.remove('show')
+                )
+            );
+
+
+        /* -------------------------------------------------
+           FORMSPREE
+           
+           Replace YOUR_FORM_ID with the ID from Formspree.
+           Example:
+           https://formspree.io/f/abcd1234
+        ------------------------------------------------- */
+
+        const FORM_ENDPOINT =
+            'https://formspree.io/f/mljdllzn';
+
+
+        /* -------------------------------------------------
+           TEXT USED BY THE ANIMATIONS
+        ------------------------------------------------- */
+
+        const ROLES = [
+            'CSE student',
+            'Deep learning researcher',
+            'Software developer'
+        ];
+
+
+        const TICKER = [
+            'Python',
+            'Deep learning',
+            'Machine learning',
+            'Image processing',
+            'XAI',
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'SQL',
+            'C++',
+            'C',
+            'Github'
+        ];
+
+
+        /* -------------------------------------------------
+           LIGHT / DARK THEME
+        ------------------------------------------------- */
+
+        const root = document.documentElement;
+        const themeButton = $('theme');
+
+
+        function setTheme(isDark)
+        {
+            root.classList.toggle('dark', isDark);
+
+            themeButton.textContent =
+                isDark ? 'Light' : 'Dark';
+
+            try
+            {
+                localStorage.setItem(
+                    'theme',
+                    isDark ? 'dark' : 'light'
+                );
+            }
+            catch (e)
+            {
+                // Ignore storage errors
+            }
+        }
+
+
+        // Get previously selected theme
+        let savedTheme = null;
+
+        try
+        {
+            savedTheme = localStorage.getItem('theme');
+        }
+        catch (e)
+        {
+            savedTheme = null;
+        }
+
+
+        setTheme(savedTheme === 'dark');
+
+
+        // Change theme when button is clicked
+        themeButton.onclick = () =>
+        {
+            setTheme(!root.classList.contains('dark'));
+        };
+
+
+        /* -------------------------------------------------
+           TYPING ANIMATION
+        ------------------------------------------------- */
+
+        let roleIndex = 0;
+        let characterIndex = 0;
+        let deleting = false;
+
+
+        function typeRole()
+        {
+            const currentRole = ROLES[roleIndex];
+
+            $('type').textContent =
+                currentRole.slice(0, characterIndex);
+
+
+            // Start deleting after the complete word appears
+            if (!deleting && characterIndex === currentRole.length)
+            {
+                deleting = true;
+
+                return setTimeout(
+                    typeRole,
+                    1400
+                );
+            }
+
+
+            // Move to the next role
+            if (deleting && characterIndex === 0)
+            {
+                deleting = false;
+
+                roleIndex =
+                    (roleIndex + 1) % ROLES.length;
+            }
+
+
+            characterIndex +=
+                deleting ? -1 : 1;
+
+
+            setTimeout(
+                typeRole,
+                deleting ? 40 : 80
+            );
+        }
+
+
+        typeRole();
+
+
+        /* -------------------------------------------------
+           SKILLS TICKER
+        ------------------------------------------------- */
+
+        $('track').innerHTML =
+            [0, 1]
+                .map(() =>
+                    TICKER
+                        .map(skill => `<span>${skill}</span>`)
+                        .join('')
+                )
+                .join('');
+
+
+        /* -------------------------------------------------
+           NUMBER COUNTERS
+        ------------------------------------------------- */
+
+        document
+            .querySelectorAll('[data-count]')
+            .forEach(element =>
+            {
+                const number =
+                    +element.dataset.count;
+
+                const decimals =
+                    +(element.dataset.dec || 0);
+
+                let progress = 0;
+
+
+                const counter =
+                    setInterval(() =>
+                    {
+                        progress += 1 / 40;
+
+
+                        element.textContent =
+                            (
+                                number *
+                                Math.min(progress, 1)
+                            ).toFixed(decimals);
+
+
+                        if (progress >= 1)
+                        {
+                            clearInterval(counter);
+                        }
+
+                    }, 30);
+            });
+
+
+        /* -------------------------------------------------
+           SCROLL REVEAL ANIMATION
+        ------------------------------------------------- */
+
+        const observer =
+            new IntersectionObserver(
+                entries =>
+                {
+                    entries.forEach(entry =>
+                    {
+                        if (entry.isIntersecting)
+                        {
+                            entry.target.classList.add('in');
+
+                            observer.unobserve(
+                                entry.target
+                            );
+                        }
+                    });
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        document
+            .querySelectorAll('.reveal')
+            .forEach(element =>
+                observer.observe(element)
+            );
+
+
+        /* -------------------------------------------------
+           ACTIVE NAVIGATION LINK + SCROLL PROGRESS
+        ------------------------------------------------- */
+
+        const sections =
+            [...document.querySelectorAll('section[id]')];
+
+
+        const navigationLinks =
+            [
+                ...document.querySelectorAll(
+                    '.nav-links a[href^="#"], .mobile-links a[href^="#"]'
+                )
+            ];
+
+
+        addEventListener(
+            'scroll',
+            () =>
+            {
+                // Calculate page scroll percentage
+                const page = root;
+
+                const scrollPercentage =
+                    page.scrollTop /
+                    (page.scrollHeight - page.clientHeight) *
+                    100;
+
+
+                $('bar').style.width =
+                    scrollPercentage + '%';
+
+
+                // Find the current section
+                let currentSection =
+                    sections[0].id;
+
+
+                sections.forEach(section =>
+                {
+                    if (
+                        section.getBoundingClientRect().top
+                        < 160
+                    )
+                    {
+                        currentSection =
+                            section.id;
+                    }
+                });
+
+
+                // Highlight current navigation link
+                navigationLinks.forEach(link =>
+                {
+                    link.classList.toggle(
+                        'on',
+                        link.getAttribute('href') ===
+                        '#' + currentSection
+                    );
+                });
+            },
+            {
+                passive: true
+            }
+        );
+
+
+        /* -------------------------------------------------
+           PROJECT FILTER
+        ------------------------------------------------- */
+
+        $('tabs').addEventListener(
+            'click',
+            event =>
+            {
+                const button =
+                    event.target.closest('.tab');
+
+
+                if (!button)
+                {
+                    return;
+                }
+
+
+                // Change active tab
+                document
+                    .querySelectorAll('.tab')
+                    .forEach(tab =>
+                        tab.classList.remove('on')
+                    );
+
+
+                button.classList.add('on');
+
+
+                // Show or hide projects
+                document
+                    .querySelectorAll('.project-card')
+                    .forEach(project =>
+                    {
+                        const showAll =
+                            button.dataset.f === 'all';
+
+                        const sameCategory =
+                            project.dataset.cat ===
+                            button.dataset.f;
+
+
+                        project.classList.toggle(
+                            'hide',
+                            !showAll && !sameCategory
+                        );
+                    });
+            }
+        );
+
+
+        /* -------------------------------------------------
+           PROJECT POPUP
+        ------------------------------------------------- */
+
+        const modal = $('modal');
+        const lightbox = $('lightbox');
+        const mainImage = $('mmain');
+
+
+        let projectImages = [];
+        let currentImage = 0;
+        let previousElement = null;
+
+
+        // Display selected project image
+        function showImage(index)
+        {
+            currentImage = index;
+
+
+            if (projectImages[index])
+            {
+                mainImage.style.display = '';
+                mainImage.src =
+                    projectImages[index];
+            }
+            else
+            {
+                mainImage.style.display = 'none';
+            }
+
+
+            // Highlight selected thumbnail
+            [
+                ...$('mthumbs').children
+            ].forEach(
+                (button, buttonIndex) =>
+                {
+                    button.style.outline =
+                        buttonIndex === index
+                            ? '2px solid #f08fa4'
+                            : 'none';
+                }
+            );
+        }
+
+
+        // Hide broken main image
+        mainImage.onerror = () =>
+        {
+            mainImage.style.display = 'none';
+        };
+
+
+        // Open project popup
+        function openProject(card)
+        {
+            // Get project images
+            projectImages =
+                (card.dataset.images || '')
+                    .split(',')
+                    .filter(Boolean);
+
+
+            // Get project title and description
+            $('mfall').textContent =
+                card
+                    .querySelector('.project-image span')
+                    .textContent;
+
+
+            $('mtitle').textContent =
+                card
+                    .querySelector('h3')
+                    .textContent;
+
+
+            $('mdesc').textContent =
+                card
+                    .querySelector('p')
+                    .textContent;
+
+
+            // Copy project tags
+            const chips =
+                card.querySelector('.chips');
+
+
+            $('mchips').innerHTML =
+                chips ? chips.innerHTML : '';
+
+
+            // Add GitHub link if available
+            $('mlinks').innerHTML =
+                card.dataset.code &&
+                card.dataset.code !== '#'
+                    ? `
+                        <a
+                            href="${card.dataset.code}"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            GitHub
+                        </a>
+                    `
+                    : '';
+
+
+            // Create image thumbnails
+            $('mthumbs').innerHTML =
+                projectImages
+                    .map(
+                        (image, index) =>
+                            `
+                            <button
+                                data-k="${index}"
+                                aria-label="Show image ${index + 1}"
+                            >
+                                <img
+                                    src="${image}"
+                                    alt=""
+                                    onerror="this.parentNode.remove()"
+                                >
+                            </button>
+                            `
+                    )
+                    .join('');
+
+
+            // Show first image
+            showImage(0);
+
+
+            // Remember the element that opened the popup
+            previousElement =
+                document.activeElement;
+
+
+            // Open popup
+            modal.classList.add('open');
+
+            document.body.style.overflow =
+                'hidden';
+
+
+            $('mclose').focus();
+        }
+
+
+        // Close project popup
+        function closeModal()
+        {
+            modal.classList.remove('open');
+
+            document.body.style.overflow =
+                '';
+
+
+            if (previousElement)
+            {
+                previousElement.focus();
+            }
+        }
+
+
+        /* -------------------------------------------------
+           PROJECT CARD CLICK EVENTS
+        ------------------------------------------------- */
+
+        document
+            .querySelectorAll('.project-card')
+            .forEach(card =>
+            {
+                // Mouse click
+                card.addEventListener(
+                    'click',
+                    () => openProject(card)
+                );
+
+
+                // Keyboard Enter / Space
+                card.addEventListener(
+                    'keydown',
+                    event =>
+                    {
+                        if (
+                            event.key === 'Enter' ||
+                            event.key === ' '
+                        )
+                        {
+                            event.preventDefault();
+
+                            openProject(card);
+                        }
+                    }
+                );
+            });
+
+
+        /* -------------------------------------------------
+           PROJECT THUMBNAILS
+        ------------------------------------------------- */
+
+        $('mthumbs').addEventListener(
+            'click',
+            event =>
+            {
+                const button =
+                    event.target.closest('button');
+
+
+                if (button)
+                {
+                    showImage(
+                        +button.dataset.k
+                    );
+                }
+            }
+        );
+
+
+        /* -------------------------------------------------
+           CLOSE PROJECT POPUP
+        ------------------------------------------------- */
+
+        $('mclose').onclick =
+            closeModal;
+
+
+        modal.addEventListener(
+            'click',
+            event =>
+            {
+                if (event.target === modal)
+                {
+                    closeModal();
+                }
+            }
+        );
+
+
+        /* -------------------------------------------------
+           FULL SCREEN IMAGE
+        ------------------------------------------------- */
+
+        $('mimg').onclick =
+            () =>
+            {
+                if (
+                    mainImage.style.display !==
+                    'none'
+                )
+                {
+                    $('lbimg').src =
+                        mainImage.src;
+
+                    lightbox.classList.add('open');
+                }
+            };
+
+
+        // Close lightbox by clicking
+        lightbox.onclick =
+            () =>
+            {
+                lightbox.classList.remove('open');
+            };
+
+
+        /* -------------------------------------------------
+           KEYBOARD CONTROLS
+        ------------------------------------------------- */
+
+        addEventListener(
+            'keydown',
+            event =>
+            {
+                // Escape closes lightbox or popup
+                if (event.key === 'Escape')
+                {
+                    if (
+                        lightbox.classList.contains('open')
+                    )
+                    {
+                        lightbox.classList.remove('open');
+                    }
+                    else if (
+                        modal.classList.contains('open')
+                    )
+                    {
+                        closeModal();
+                    }
+                }
+
+
+                // Arrow keys change project images
+                if (
+                    modal.classList.contains('open') &&
+                    projectImages.length > 1 &&
+                    (
+                        event.key === 'ArrowRight' ||
+                        event.key === 'ArrowLeft'
+                    )
+                )
+                {
+                    const direction =
+                        event.key === 'ArrowRight'
+                            ? 1
+                            : projectImages.length - 1;
+
+
+                    showImage(
+                        (
+                            currentImage +
+                            direction
+                        ) % projectImages.length
+                    );
+                }
+            }
+        );
+
+
+        /* -------------------------------------------------
+           CONTACT FORM + FORMSPREE
+        ------------------------------------------------- */
+
+        const form = $('form');
+        const sendButton = $('send');
+        const statusMessage = $('status');
+
+
+        // Show a message below the form
+        function showFormMessage(message, isError)
+        {
+            statusMessage.textContent =
+                message;
+
+
+            statusMessage.style.color =
+                isError
+                    ? '#dc2626'
+                    : 'var(--accent)';
+        }
+
+
+        // Submit contact form
+        form.addEventListener(
+            'submit',
+            async event =>
+            {
+                // Stop normal browser submission
+                event.preventDefault();
+
+
+                // Check required fields
+                if (!form.checkValidity())
+                {
+                    showFormMessage(
+                        'Please fill in your name, a valid email and a message.',
+                        true
+                    );
+
+                    return;
+                }
+
+
+                // Check whether Formspree ID was added
+                if (
+                    FORM_ENDPOINT.includes(
+                        'YOUR_FORM_ID'
+                    )
+                )
+                {
+                    showFormMessage(
+                        'Form not connected yet. Add your Formspree link in index.html.',
+                        true
+                    );
+
+                    return;
+                }
+
+
+                // Change button while sending
+                sendButton.disabled = true;
+                sendButton.textContent =
+                    'Sending...';
+
+
+                try
+                {
+                    // Send form data to Formspree
+                    const response =
+                        await fetch(
+                            FORM_ENDPOINT,
+                            {
+                                method: 'POST',
+
+                                headers:
+                                {
+                                    Accept:
+                                        'application/json'
+                                },
+
+                                body:
+                                    new FormData(form)
+                            }
+                        );
+
+
+                    // Check whether Formspree accepted it
+                    if (!response.ok)
+                    {
+                        throw new Error();
+                    }
+
+
+                    // Clear the form
+                    form.reset();
+
+
+                    // Show success message
+                    showFormMessage(
+                        'Message sent. Thank you, I will reply soon!',
+                        false
+                    );
+                }
+                catch (error)
+                {
+                    // Show error message
+                    showFormMessage(
+                        'Could not send. Please email me directly.',
+                        true
+                    );
+                }
+
+
+                // Restore button
+                sendButton.disabled = false;
+                sendButton.textContent =
+                    'Send Message';
+            }
+        );
+
+    </script>
+
+
+    <script>
+        /* Certificates: click to open full size (reuses the project lightbox) */
+        document.querySelectorAll('.cert').forEach(cert =>
+        {
+            const open = () =>
+            {
+                const img = cert.querySelector('img');
+                if (!img) return;
+                document.getElementById('lbimg').src = img.src;
+                document.getElementById('lightbox').classList.add('open');
+            };
+            cert.addEventListener('click', open);
+            cert.addEventListener('keydown', e =>
+            {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+            });
+        });
+    </script>
+
+</body>
+</html>
